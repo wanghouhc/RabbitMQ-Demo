@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Publish_Subscribe" />
+        <module name="QuickStart" />
+        <module name="QuickStart (1)" />
+        <module name="Routing" />
+        <module name="spring-rabbitmq-consumer" />
+        <module name="spring-rabbitmq-producer" />
+        <module name="springboot-rabbitmq-consumer" />
+        <module name="springboot-rabbitmq-consumer (1)" />
+        <module name="springboot-rabbitmq-producer" />
+        <module name="Topics" />
+        <module name="Work_queues" />
+        <module name="Work_queues (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Publish_Subscribe" target="1.5" />
+      <module name="QuickStart" target="1.5" />
+      <module name="QuickStart (1)" target="1.5" />
+      <module name="RabbitMQ-Demo" target="1.5" />
+      <module name="Routing" target="1.5" />
+      <module name="spring-rabbitmq-consumer" target="1.6" />
+      <module name="spring-rabbitmq-producer" target="1.8" />
+      <module name="SpringBoot-RabbitMQ" target="1.5" />
+      <module name="springboot-rabbitmq-consumer" target="1.8" />
+      <module name="springboot-rabbitmq-consumer (1)" target="1.8" />
+      <module name="springboot-rabbitmq-producer" target="1.8" />
+      <module name="Topics" target="1.5" />
+      <module name="Work_queues" target="1.5" />
+      <module name="Work_queues (1)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

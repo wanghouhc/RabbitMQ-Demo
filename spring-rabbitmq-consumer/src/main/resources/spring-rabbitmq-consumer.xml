@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath:rabbitmq.properties"/>
+    <!--定义rabbitmq connectionFactory-->
+    <rabbit:connection-factory id="connectionFactory" host="127.0.0.1"
+                               port="5672"
+                               username="guest"
+                               password="guest"
+                               virtual-host="/"/>
+    <!--定义交换机-->
+    <rabbit:admin connection-factory="connectionFactory"/>
+
+    <!--定义rabbitmq对象操作可以在代码中方便发送消息-->
+    <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
+
+
+    <context:component-scan base-package="com.huangchuan.listener"/>
+    <!--定义监听容器-->
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual" prefetch="1">
+        <!--<rabbit:listener ref="ackListener" queue-names="test_queue_comfirm"></rabbit:listener>-->
+        <!--<rabbit:listener ref="qosListener" queue-names="test_queue_comfirm"></rabbit:listener>-->
+        <!--定义监听器监听正常队列-->
+        <!--<rabbit:listener ref="dlxListener" queue-names="test_queue_dlx"></rabbit:listener>-->
+        <!--延迟队列效果实现，一定要监听的是死信队列！！！！-->
+        <rabbit:listener ref="orderListener" queue-names="order_queue_dlx"></rabbit:listener>
+    </rabbit:listener-container>
+</beans>

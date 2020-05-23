@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Publish_Subscribe/Work_queues (1).iml" filepath="$PROJECT_DIR$/Publish_Subscribe/Work_queues (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuickStart/QuickStart.iml" filepath="$PROJECT_DIR$/QuickStart/QuickStart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RabbitMQ-Demo.iml" filepath="$PROJECT_DIR$/RabbitMQ-Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Routing/Routing.iml" filepath="$PROJECT_DIR$/Routing/Routing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Topics/Topics.iml" filepath="$PROJECT_DIR$/Topics/Topics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Work_queues/Work_queues.iml" filepath="$PROJECT_DIR$/Work_queues/Work_queues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/spring-rabbitmq-consumer/spring-rabbitmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" filepath="$PROJECT_DIR$/spring-rabbitmq-producer/spring-rabbitmq-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-producer/springboot-rabbitmq-producer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-producer/springboot-rabbitmq-producer.iml" />
+    </modules>
+  </component>
+</project>
